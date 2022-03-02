@@ -24,10 +24,11 @@ function App() {
   };
 
   const deleteFood = (foodID) => {
-    const filteredFoods = foods.filter((food) => {
-      return food !== foodID;
+    console.log('clicking')
+    const deletedFoods = foods.filter((food) => {
+      return food.name !== foodID;
     });
-    setFoods(filteredFoods);
+    setDisplayFoods(deletedFoods);
   };
 
   return (
