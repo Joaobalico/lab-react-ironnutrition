@@ -23,10 +23,10 @@ function App() {
     setDisplayFoods(filteredFoods)
   };
 
-  const deleteFood = (foodID) => {
+  const deleteFood = (foodName) => {
     console.log('clicking')
     const deletedFoods = foods.filter((food) => {
-      return food.name !== foodID;
+      return food.name !== foodName;
     });
     setDisplayFoods(deletedFoods);
   };
