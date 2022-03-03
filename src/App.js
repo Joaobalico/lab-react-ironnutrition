@@ -29,6 +29,7 @@ function App() {
       return food.name !== foodName;
     });
     setDisplayFoods(deletedFoods);
+    setFoods(deletedFoods)
   };
 
   return (
